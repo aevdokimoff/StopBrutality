@@ -29,6 +29,7 @@
 		ACE04AE8248EFFDC00AD2FC9 /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE04AE4248EFFDC00AD2FC9 /* PreviewView.swift */; };
 		ACE04AE9248EFFDC00AD2FC9 /* ItemSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE04AE5248EFFDC00AD2FC9 /* ItemSelectionViewController.swift */; };
 		ACE04AEB248F0B2300AD2FC9 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE04AEA248F0B2300AD2FC9 /* Post.swift */; };
+		ACE04AEE248F165D00AD2FC9 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE04AED248F165D00AD2FC9 /* MockData.swift */; };
 		DD73EA4287A005CA1515C7A3 /* Pods_StopPoliceBrutality.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 419AFCC9A6B196FBABA23554 /* Pods_StopPoliceBrutality.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,7 @@
 		ACE04AE4248EFFDC00AD2FC9 /* PreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
 		ACE04AE5248EFFDC00AD2FC9 /* ItemSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemSelectionViewController.swift; sourceTree = "<group>"; };
 		ACE04AEA248F0B2300AD2FC9 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		ACE04AED248F165D00AD2FC9 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 		F96B237C85C3D2FA7FF14591 /* Pods-StopPoliceBrutality.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StopPoliceBrutality.release.xcconfig"; path = "Target Support Files/Pods-StopPoliceBrutality/Pods-StopPoliceBrutality.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -120,10 +122,10 @@
 				ACE04AB5248EF1B000AD2FC9 /* ViewController.swift */,
 				ACE04ADF248EF71F00AD2FC9 /* AddCaseVC.swift */,
 				ACE04AB1248EF1B000AD2FC9 /* CustomPicker.swift */,
-				ACE04AB7248EF1B000AD2FC9 /* data.plist */,
 				ACE04AB6248EF1B000AD2FC9 /* Extensions.swift */,
 				ACE04AE1248EFFC600AD2FC9 /* Camera */,
 				ACE04AB8248EF1B000AD2FC9 /* News */,
+				ACE04AEC248F163100AD2FC9 /* Supporting Files */,
 				ACE04ADD248EF1BD00AD2FC9 /* Main.storyboard */,
 				ACE04A90248EF14F00AD2FC9 /* Assets.xcassets */,
 				ACE04A92248EF14F00AD2FC9 /* LaunchScreen.storyboard */,
@@ -155,6 +157,15 @@
 				ACE04AE4248EFFDC00AD2FC9 /* PreviewView.swift */,
 			);
 			path = Camera;
+			sourceTree = "<group>";
+		};
+		ACE04AEC248F163100AD2FC9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ACE04AB7248EF1B000AD2FC9 /* data.plist */,
+				ACE04AED248F165D00AD2FC9 /* MockData.swift */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,6 +293,7 @@
 				ACE04AC0248EF1B000AD2FC9 /* Commons.swift in Sources */,
 				ACE04AD6248EF1B000AD2FC9 /* NewsCell.swift in Sources */,
 				ACE04ADC248EF1B100AD2FC9 /* SceneDelegate.swift in Sources */,
+				ACE04AEE248F165D00AD2FC9 /* MockData.swift in Sources */,
 				ACE04AD9248EF1B000AD2FC9 /* FlipboardCell.swift in Sources */,
 				ACE04AE8248EFFDC00AD2FC9 /* PreviewView.swift in Sources */,
 				ACE04AE0248EF71F00AD2FC9 /* AddCaseVC.swift in Sources */,

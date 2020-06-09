@@ -167,18 +167,18 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     
     // MARK: - TableView
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return debugPosts.count
+        return mockPosts.count
     }
 
     // create a cell for each table view row
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
         let cell: CaseEntryCell = self.tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier) as! CaseEntryCell
-        cell.title.text = debugPosts[indexPath.row].title
-        cell.date.text = debugPosts[indexPath.row].date
-        cell.desc.text = debugPosts[indexPath.row].descr
-        cell.commentsCount.text = "\(debugPosts[indexPath.row].commentsCount)"
-        cell.postImageView.image = UIImage(named: debugPosts[indexPath.row].imageName)
+        cell.title.text = mockPosts[indexPath.row].title
+        cell.date.text = mockPosts[indexPath.row].date
+        cell.desc.text = mockPosts[indexPath.row].descr
+        cell.commentsCount.text = "\(mockPosts[indexPath.row].commentsCount)"
+        cell.postImageView.image = UIImage(named: mockPosts[indexPath.row].imageName)
 
         return cell
     }
