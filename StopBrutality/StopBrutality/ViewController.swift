@@ -28,6 +28,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     @IBOutlet weak var casesCountEnclosureView: UIView!
     @IBOutlet weak var casesCountEnclosureVisualEffectView: UIVisualEffectView!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var sosButtonBackgroundLabel: UILabel!
     
     // MARK: - Globals
     let kLatitude = "latitude"
@@ -64,6 +65,10 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         self.casesCountEnclosureVisualEffectView.layer.cornerRadius = 10.0
         self.casesCountEnclosureVisualEffectView.layer.masksToBounds = true
         self.casesCountEnclosureView.addShadow(offset: CGSize.zero, color: UIColor.black, radius: 8.0, opacity: 0.15)
+        self.sosButtonBackgroundLabel.layer.cornerRadius = 0.5 * self.sosButtonBackgroundLabel.bounds.size.width
+        self.sosButtonBackgroundLabel.clipsToBounds = true
+        self.sosButtonBackgroundLabel.layer.borderWidth = 1
+        self.sosButtonBackgroundLabel.layer.borderColor = UIColor.white.cgColor
     }
     
     func setupKeyboard() {
@@ -214,6 +219,11 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         self.setupViews()
     }
     
+    @IBAction func sosButtonDidTouch(_ sender: Any) {
+        let alertView = SPAlertView(title: "SOS called", message: nil, preset: SPAlertPreset.exclamation)
+        alertView.duration = 2.0
+        alertView.present()
+    }
 }
 
 extension ViewController: UIPickerViewDataSource, UIPickerViewDelegate {

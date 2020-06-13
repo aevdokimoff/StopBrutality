@@ -10,7 +10,7 @@
         <!--Map-->
         <scene sceneID="A6u-wP-1dS">
             <objects>
-                <viewController id="Hgx-wS-ceq" customClass="ViewController" customModule="StopPoliceBrutality" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Hgx-wS-ceq" customClass="ViewController" customModule="StopBrutality" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PWf-Ms-OiH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -27,7 +27,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="349"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Most popular " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TsZ-aW-8Cw">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10km around you" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TsZ-aW-8Cw">
                                                     <rect key="frame" x="10" y="15" width="312" height="22"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="22" id="8V9-tQ-8Lm"/>
@@ -42,7 +42,7 @@
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <prototypes>
-                                                        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="142" id="Ivc-Hy-lUj" customClass="CaseEntryCell" customModule="StopPoliceBrutality" customModuleProvider="target">
+                                                        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="142" id="Ivc-Hy-lUj" customClass="CaseEntryCell" customModule="StopBrutality" customModuleProvider="target">
                                                             <rect key="frame" x="0.0" y="28" width="414" height="142"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ivc-Hy-lUj" id="SxK-3K-Ppe">
@@ -198,6 +198,58 @@
                                 </constraints>
                                 <blurEffect style="regular"/>
                             </visualEffectView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dZm-Ut-OJO">
+                                <rect key="frame" x="337" y="106" width="57" height="57"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZwK-PK-toK">
+                                        <rect key="frame" x="0.0" y="0.0" width="57" height="57"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kY0-X8-yxV">
+                                        <rect key="frame" x="0.0" y="1" width="57" height="39"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="39" id="ssh-RE-SYg"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="exclamationmark.triangle.fill" catalog="system"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SOS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P5F-xX-bqg">
+                                        <rect key="frame" x="14" y="32" width="29" height="17"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="17" id="0kr-fw-LxR"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FNI-4z-Zxw">
+                                        <rect key="frame" x="0.0" y="0.0" width="57" height="57"/>
+                                        <connections>
+                                            <action selector="sosButtonDidTouch:" destination="Hgx-wS-ceq" eventType="touchUpInside" id="TAr-2V-987"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="kY0-X8-yxV" firstAttribute="top" secondItem="dZm-Ut-OJO" secondAttribute="top" constant="1" id="BcJ-vy-66V"/>
+                                    <constraint firstItem="kY0-X8-yxV" firstAttribute="leading" secondItem="dZm-Ut-OJO" secondAttribute="leading" id="I6T-3L-1Lz"/>
+                                    <constraint firstAttribute="bottom" secondItem="FNI-4z-Zxw" secondAttribute="bottom" id="K0F-E9-TF5"/>
+                                    <constraint firstAttribute="width" constant="57" id="NuX-4Y-suJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="P5F-xX-bqg" secondAttribute="trailing" constant="14" id="Psv-OT-SyN"/>
+                                    <constraint firstItem="P5F-xX-bqg" firstAttribute="leading" secondItem="dZm-Ut-OJO" secondAttribute="leading" constant="14" id="UgM-xi-Pss"/>
+                                    <constraint firstAttribute="trailing" secondItem="kY0-X8-yxV" secondAttribute="trailing" id="ZYP-4Y-adb"/>
+                                    <constraint firstAttribute="trailing" secondItem="FNI-4z-Zxw" secondAttribute="trailing" id="avZ-ua-JK7"/>
+                                    <constraint firstAttribute="height" constant="57" id="d0f-Gj-1rY"/>
+                                    <constraint firstItem="P5F-xX-bqg" firstAttribute="top" secondItem="dZm-Ut-OJO" secondAttribute="top" constant="32" id="frd-Rr-l53"/>
+                                    <constraint firstItem="FNI-4z-Zxw" firstAttribute="leading" secondItem="dZm-Ut-OJO" secondAttribute="leading" id="hfL-vV-4pJ"/>
+                                    <constraint firstItem="FNI-4z-Zxw" firstAttribute="top" secondItem="dZm-Ut-OJO" secondAttribute="top" id="qPh-xa-mjA"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -207,6 +259,8 @@
                             <constraint firstItem="uKM-1z-oyu" firstAttribute="leading" secondItem="PWf-Ms-OiH" secondAttribute="leading" id="FNm-8H-Qc9"/>
                             <constraint firstAttribute="trailing" secondItem="uKM-1z-oyu" secondAttribute="trailing" id="Ug1-UE-WsI"/>
                             <constraint firstItem="avM-AD-57R" firstAttribute="trailing" secondItem="odE-ya-cOw" secondAttribute="trailing" id="Ypk-AX-npa"/>
+                            <constraint firstItem="odE-ya-cOw" firstAttribute="trailing" secondItem="dZm-Ut-OJO" secondAttribute="trailing" constant="20" id="clA-ih-9p3"/>
+                            <constraint firstItem="dZm-Ut-OJO" firstAttribute="top" secondItem="uKM-1z-oyu" secondAttribute="bottom" constant="20" id="mCt-hc-z5c"/>
                             <constraint firstItem="uKM-1z-oyu" firstAttribute="top" secondItem="PWf-Ms-OiH" secondAttribute="top" id="pDT-mx-56j"/>
                             <constraint firstItem="GDE-er-sOG" firstAttribute="trailing" secondItem="odE-ya-cOw" secondAttribute="trailing" id="pQ1-0m-CdY"/>
                             <constraint firstItem="avM-AD-57R" firstAttribute="top" secondItem="odE-ya-cOw" secondAttribute="top" constant="-44" id="sng-kF-yY0"/>
@@ -220,6 +274,7 @@
                         <outlet property="casesCountEnclosureVisualEffectView" destination="FN9-L2-zIH" id="93K-yC-eW7"/>
                         <outlet property="mapView" destination="avM-AD-57R" id="hLh-mH-FGD"/>
                         <outlet property="selectCaseType" destination="TQc-Q7-4Fz" id="UPN-Kd-rj9"/>
+                        <outlet property="sosButtonBackgroundLabel" destination="ZwK-PK-toK" id="zkS-xU-bll"/>
                         <outlet property="tableView" destination="n2o-Gs-Qer" id="hTX-Iq-jWc"/>
                     </connections>
                 </viewController>
@@ -251,7 +306,7 @@
         <!--News-->
         <scene sceneID="Dj2-ht-Bk0">
             <objects>
-                <viewController id="JS8-we-1M8" customClass="NewsVC" customModule="StopPoliceBrutality" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="JS8-we-1M8" customClass="NewsVC" customModule="StopBrutality" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZTj-qO-gql">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -285,7 +340,7 @@
         <!--Report new case-->
         <scene sceneID="69o-TZ-9LB">
             <objects>
-                <viewController id="c8L-Rn-1ST" customClass="AddCaseVC" customModule="StopPoliceBrutality" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="c8L-Rn-1ST" customClass="AddCaseVC" customModule="StopBrutality" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZJ7-PQ-uTX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -382,12 +437,12 @@
         <!--Camera View Controller-->
         <scene sceneID="YMH-Lh-Go4">
             <objects>
-                <viewController id="44u-1d-XP0" userLabel="Camera View Controller" customClass="CameraViewController" customModule="AVCam" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="44u-1d-XP0" userLabel="Camera View Controller" customClass="CameraViewController" customModule="StopBrutality" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MP2-Ld-9jm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Ik-nr-OdG" userLabel="Preview" customClass="PreviewView" customModule="AVCam" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Ik-nr-OdG" userLabel="Preview" customClass="PreviewView" customModule="StopBrutality" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <gestureRecognizers/>
@@ -492,7 +547,7 @@
                                 </connections>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="Bnv-hZ-pdL">
-                                <rect key="frame" x="92" y="90" width="230" height="26"/>
+                                <rect key="frame" x="92" y="80" width="230" height="26"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="6Dq-Ai-QTd"/>
                                 </constraints>
@@ -647,101 +702,101 @@
                         <viewLayoutGuide key="safeArea" id="LR5-OY-FwU"/>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="Mut-zD-S6R"/>
                                 <exclude reference="8g3-9p-MFL"/>
+                                <exclude reference="Mut-zD-S6R"/>
                                 <exclude reference="TAM-ri-hke"/>
                                 <exclude reference="VS4-hL-5ic"/>
                                 <exclude reference="zE4-UB-eUb"/>
-                                <exclude reference="i29-kl-YR7"/>
-                                <exclude reference="rfn-pV-6Dd"/>
-                                <exclude reference="bgf-If-KaX"/>
-                                <exclude reference="pUZ-IG-AMj"/>
-                                <exclude reference="o7g-ff-Hzo"/>
-                                <exclude reference="Fi9-P1-2Un"/>
-                                <exclude reference="6Ge-Vk-U14"/>
-                                <exclude reference="fCW-AR-eok"/>
-                                <exclude reference="Km2-1f-0tS"/>
-                                <exclude reference="Eqh-SI-bDW"/>
-                                <exclude reference="WHt-DT-zVF"/>
-                                <exclude reference="hg0-Q0-SGv"/>
-                                <exclude reference="Gsj-pB-gXt"/>
-                                <exclude reference="hdL-FM-LG2"/>
-                                <exclude reference="flc-jm-8dU"/>
-                                <exclude reference="2sE-K6-Mbc"/>
                                 <exclude reference="Wbt-GA-vyr"/>
+                                <exclude reference="2sE-K6-Mbc"/>
+                                <exclude reference="flc-jm-8dU"/>
                                 <exclude reference="Nz8-2B-y5Z"/>
+                                <exclude reference="6Ge-Vk-U14"/>
+                                <exclude reference="Eqh-SI-bDW"/>
+                                <exclude reference="Gsj-pB-gXt"/>
+                                <exclude reference="Km2-1f-0tS"/>
+                                <exclude reference="WHt-DT-zVF"/>
+                                <exclude reference="fCW-AR-eok"/>
+                                <exclude reference="hdL-FM-LG2"/>
+                                <exclude reference="hg0-Q0-SGv"/>
+                                <exclude reference="Fi9-P1-2Un"/>
+                                <exclude reference="bgf-If-KaX"/>
+                                <exclude reference="i29-kl-YR7"/>
+                                <exclude reference="o7g-ff-Hzo"/>
+                                <exclude reference="pUZ-IG-AMj"/>
+                                <exclude reference="rfn-pV-6Dd"/>
                                 <exclude reference="p0Z-0g-VNw"/>
-                                <exclude reference="mde-IE-YeE"/>
-                                <exclude reference="Pee-9T-ZSj"/>
                                 <exclude reference="9oI-ht-OLx"/>
                                 <exclude reference="AZl-l2-n2N"/>
                                 <exclude reference="abk-V1-tnT"/>
                                 <exclude reference="oMH-YY-u0l"/>
+                                <exclude reference="Pee-9T-ZSj"/>
+                                <exclude reference="mde-IE-YeE"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact">
                             <mask key="constraints">
-                                <exclude reference="JcI-4d-Hry"/>
                                 <include reference="8g3-9p-MFL"/>
+                                <exclude reference="JcI-4d-Hry"/>
+                                <exclude reference="LTt-kL-IXT"/>
                                 <include reference="TAM-ri-hke"/>
                                 <exclude reference="dJy-6W-SaN"/>
-                                <exclude reference="LTt-kL-IXT"/>
                                 <include reference="zE4-UB-eUb"/>
-                                <exclude reference="Iap-fB-IHG"/>
-                                <include reference="6Ge-Vk-U14"/>
-                                <exclude reference="hg0-Q0-SGv"/>
-                                <exclude reference="hdL-FM-LG2"/>
-                                <exclude reference="eSA-qx-ZfS"/>
-                                <exclude reference="i1n-sz-awY"/>
-                                <include reference="flc-jm-8dU"/>
+                                <include reference="Wbt-GA-vyr"/>
+                                <exclude reference="g51-u9-wfm"/>
+                                <include reference="rs4-Zn-H32"/>
                                 <include reference="2sE-K6-Mbc"/>
                                 <exclude reference="cRa-5c-Ma4"/>
-                                <exclude reference="g51-u9-wfm"/>
-                                <include reference="Wbt-GA-vyr"/>
-                                <include reference="rs4-Zn-H32"/>
+                                <exclude reference="eSA-qx-ZfS"/>
+                                <include reference="flc-jm-8dU"/>
+                                <exclude reference="i1n-sz-awY"/>
                                 <include reference="Nz8-2B-y5Z"/>
                                 <exclude reference="hpq-mJ-bnn"/>
+                                <include reference="6Ge-Vk-U14"/>
+                                <exclude reference="Iap-fB-IHG"/>
+                                <exclude reference="hdL-FM-LG2"/>
+                                <exclude reference="hg0-Q0-SGv"/>
                                 <exclude reference="89n-sC-Taa"/>
                                 <include reference="p0Z-0g-VNw"/>
-                                <include reference="mde-IE-YeE"/>
-                                <include reference="Pee-9T-ZSj"/>
-                                <include reference="9oI-ht-OLx"/>
+                                <exclude reference="8gT-AO-JHx"/>
                                 <exclude reference="58u-fV-Q0T"/>
+                                <include reference="9oI-ht-OLx"/>
                                 <include reference="AZl-l2-n2N"/>
                                 <include reference="abk-V1-tnT"/>
-                                <exclude reference="ghw-1v-MLz"/>
                                 <exclude reference="fm0-ZT-fg1"/>
+                                <exclude reference="ghw-1v-MLz"/>
                                 <include reference="oMH-YY-u0l"/>
-                                <exclude reference="8gT-AO-JHx"/>
+                                <include reference="Pee-9T-ZSj"/>
+                                <include reference="mde-IE-YeE"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=compact">
                             <mask key="constraints">
+                                <include reference="Eqh-SI-bDW"/>
                                 <include reference="i29-kl-YR7"/>
                                 <include reference="pUZ-IG-AMj"/>
-                                <include reference="Eqh-SI-bDW"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=regular">
                             <mask key="constraints">
-                                <include reference="rfn-pV-6Dd"/>
-                                <include reference="bgf-If-KaX"/>
                                 <include reference="Km2-1f-0tS"/>
                                 <include reference="WHt-DT-zVF"/>
+                                <include reference="bgf-If-KaX"/>
+                                <include reference="rfn-pV-6Dd"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="constraints">
                                 <include reference="Mut-zD-S6R"/>
-                                <include reference="o7g-ff-Hzo"/>
                                 <include reference="fCW-AR-eok"/>
+                                <include reference="o7g-ff-Hzo"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=regular">
                             <mask key="constraints">
                                 <include reference="VS4-hL-5ic"/>
-                                <include reference="Fi9-P1-2Un"/>
                                 <include reference="Gsj-pB-gXt"/>
+                                <include reference="Fi9-P1-2Un"/>
                             </mask>
                         </variation>
                     </view>
@@ -785,6 +840,7 @@
         <image name="PortraitMatteON" width="150" height="150"/>
         <image name="bell.circle.fill" catalog="system" width="128" height="121"/>
         <image name="camera.fill" catalog="system" width="128" height="96"/>
+        <image name="exclamationmark.triangle.fill" catalog="system" width="128" height="112"/>
         <image name="message" catalog="system" width="128" height="113"/>
         <image name="plus.rectangle.fill" catalog="system" width="128" height="93"/>
         <image name="rectangle.3.offgrid.fill" catalog="system" width="128" height="81"/>
