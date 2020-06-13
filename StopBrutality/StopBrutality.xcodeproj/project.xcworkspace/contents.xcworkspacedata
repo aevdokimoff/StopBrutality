@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:StopPoliceBrutality.xcodeproj">
+      location = "self:StopBrutality.xcodeproj">
    </FileRef>
 </Workspace>

@@ -4,6 +4,8 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDisplayName</key>
+	<string>StopBrutality</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -20,6 +22,16 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>AVCam uses the camera to take photos and video.</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Location requred for app to work</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Location requred for app to work</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>AVCam uses the microphone to record sound during Live Photos and movies.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>AVCam saves captured photos and videos to your photo library.</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -50,8 +62,6 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
@@ -60,17 +70,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>NSCameraUsageDescription</key>
-	<string>AVCam uses the camera to take photos and video.</string>
-	<key>NSMicrophoneUsageDescription</key>
-	<string>AVCam uses the microphone to record sound during Live Photos and movies.</string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>AVCam saves captured photos and videos to your photo library.</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Location requred for app to work</string>
-	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>Location requred for app to work</string>
-	<key>CFBundleDisplayName</key>
-	<string>StopBrutality</string>
 </dict>
 </plist>
