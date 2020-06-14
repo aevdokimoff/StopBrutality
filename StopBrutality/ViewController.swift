@@ -16,6 +16,8 @@ class CaseEntryCell: UITableViewCell {
     @IBOutlet weak var date: UILabel!
     @IBOutlet weak var desc: UILabel!
     @IBOutlet weak var commentsCount: UILabel!
+    @IBOutlet weak var upvotesCount: UILabel!
+    @IBOutlet weak var downvotesCount: UILabel!
     @IBOutlet weak var postImageView: UIImageView!
 }
 
@@ -183,6 +185,8 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         cell.date.text = mockPosts[indexPath.row].date
         cell.desc.text = mockPosts[indexPath.row].descr
         cell.commentsCount.text = "\(mockPosts[indexPath.row].commentsCount)"
+        cell.upvotesCount.text = "\(mockPosts[indexPath.row].upvotesCount)"
+        cell.downvotesCount.text = "\(mockPosts[indexPath.row].downvotesCount)"
         cell.postImageView.image = UIImage(named: mockPosts[indexPath.row].imageName)
 
         return cell

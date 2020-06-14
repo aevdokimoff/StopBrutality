@@ -15,4 +15,6 @@ public struct Post {
     let descr: String
     let commentsCount: Int
     let imageName: String
+    let upvotesCount: Int
+    let downvotesCount: Int
 }
