@@ -18,6 +18,7 @@ StopBrutality allows people to monitor each other's behavior and help others if 
 
 ### Architecture:
 ![screenshots](https://github.com/aevdokimoff/StopBrutality/blob/master/architecture2.png)
+
 The architecture of the storage system is described as follows: all data that users upload to the application is stored decentralized. Specifically, all users of the application can be divided into two groups: ordinary users and administrators. The latter keep a copy of all data in an encrypted form on their computers acting as servers. Periodically, the data is being compared with other administrators to make sure that it is up to date. When launching the application, the user connects to one of the available (online) servers and requests data from there. The purpose of decentralization is to protect app's content and user's data from malevolent manipulation.
 
 ### In progress:
