@@ -20,6 +20,7 @@ StopBrutality allows people to monitor each other's behavior and help others if 
 * Finilizing back-end part
 * Comments section
 * Upvote/downvote posts
+* Remove mock data
 
 ## Tech Specifications:
 * Programming language: Swift
