@@ -29,3 +29,6 @@ StopBrutality allows people to monitor each other's behavior and help others if 
 * LFHeatMap
 * SPAlert
 * PKHUD
+
+## License
+This project is available under the MIT license.
