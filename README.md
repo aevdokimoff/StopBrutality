@@ -16,6 +16,7 @@ StopBrutality allows people to monitor each other's behavior and help others if 
 * Show the latest news 
 * Save data decentralized to admin's servers
 * Upvote/downvote posts
+* News feed
 
 ### Architecture:
 ![screenshots](https://github.com/aevdokimoff/StopBrutality/blob/master/architecture2.png)
